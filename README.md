@@ -5,8 +5,8 @@ This module creates an AWS VPC peering connector and route.
 ## Usage
 
 ```hcl
-module "vpc_peering" {
-  source  = "KeisukeYamashita/terraform-aws-vpc-peering-mongo-atlas"
+module "vpc_peering_connector" {
+  source  = "KeisukeYamashita/terraform-aws-vpc-peering-connector"
   version = "~> 1.0"
   
   target_cidr_block = "100.200.100.200/20"
@@ -16,11 +16,6 @@ module "vpc_peering" {
   route_table_id = aws_route_table.my_table.id
 }
 ```
-
-## Examples
-
-* [notify-slack-simple](https://github.com/terraform-aws-modules/terraform-aws-notify-slack/tree/master/examples/notify-slack-simple) - Creates SNS topic which sends messages to Slack channel.
-* [cloudwatch-alerts-to-slack](https://github.com/terraform-aws-modules/terraform-aws-notify-slack/tree/master/examples/cloudwatch-alerts-to-slack) - End to end example which shows how to send AWS Cloudwatch alerts to Slack channel and use KMS to encrypt webhook URL.
 
 ## Requirements
 
