@@ -1,4 +1,4 @@
-# AWS VPC Peering MongoDB Atlas Terraform module
+# AWS VPC Peering Connector module
 
 This module creates an AWS VPC peering connector and route.
 
